@@ -1,0 +1,33 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31903.59
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{41583E31-D077-44E7-AE26-212AC0CA5EDA}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Frameworks", "Frameworks", "{12E0AB91-978B-4B2C-8355-1CF0DF92EEDA}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Services", "Services", "{84C933FE-B431-4894-9715-C6FA89B36147}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UpWatch.Configuration", "src\Frameworks\UpWatch.Configuration\UpWatch.Configuration.csproj", "{C7B0385B-9796-4991-8BD9-EE97D301B176}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C7B0385B-9796-4991-8BD9-EE97D301B176}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C7B0385B-9796-4991-8BD9-EE97D301B176}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C7B0385B-9796-4991-8BD9-EE97D301B176}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C7B0385B-9796-4991-8BD9-EE97D301B176}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{12E0AB91-978B-4B2C-8355-1CF0DF92EEDA} = {41583E31-D077-44E7-AE26-212AC0CA5EDA}
+		{84C933FE-B431-4894-9715-C6FA89B36147} = {41583E31-D077-44E7-AE26-212AC0CA5EDA}
+		{C7B0385B-9796-4991-8BD9-EE97D301B176} = {12E0AB91-978B-4B2C-8355-1CF0DF92EEDA}
+	EndGlobalSection
+EndGlobal
