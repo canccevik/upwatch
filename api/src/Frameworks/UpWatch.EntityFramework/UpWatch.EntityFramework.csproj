@@ -1,0 +1,19 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="9.0.0-rc.2.24474.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\UpWatch.Domain\UpWatch.Domain.csproj" />
+    <ProjectReference Include="..\UpWatch.Exceptions\UpWatch.Exceptions.csproj" />
+    <ProjectReference Include="..\UpWatch.Repositories\UpWatch.Repositories.csproj" />
+  </ItemGroup>
+
+</Project>
