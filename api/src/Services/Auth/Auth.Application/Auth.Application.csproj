@@ -6,4 +6,15 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\Frameworks\UpWatch.Exceptions\UpWatch.Exceptions.csproj" />
+    <ProjectReference Include="..\..\..\Frameworks\UpWatch.IoC\UpWatch.IoC.csproj" />
+    <ProjectReference Include="..\..\..\Frameworks\UpWatch.MediatR\UpWatch.MediatR.csproj" />
+    <ProjectReference Include="..\..\User\User.Application\User.Application.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="FluentValidation" Version="11.10.0" />
+  </ItemGroup>
+
 </Project>
