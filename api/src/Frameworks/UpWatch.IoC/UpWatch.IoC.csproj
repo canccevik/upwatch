@@ -10,4 +10,8 @@
     <PackageReference Include="Microsoft.Extensions.DependencyInjection" Version="9.0.0-rc.2.24473.5" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\UpWatch.Configuration\UpWatch.Configuration.csproj" />
+  </ItemGroup>
+
 </Project>

@@ -6,4 +6,8 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\Frameworks\UpWatch.IoC\UpWatch.IoC.csproj" />
+  </ItemGroup>
+
 </Project>

@@ -1,9 +1,13 @@
+using UpWatch.Api;
+using UpWatch.IoC;
+
 var builder = WebApplication.CreateBuilder(args);
 var services = builder.Services;
 
 services.AddControllers();
 services.AddEndpointsApiExplorer();
 services.AddSwaggerGen();
+services.RegisterModule<ApiModule>();
 
 var app = builder.Build();
 

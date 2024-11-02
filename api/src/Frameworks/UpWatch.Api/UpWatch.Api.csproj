@@ -10,4 +10,9 @@
     <PackageReference Include="Swashbuckle.AspNetCore" Version="6.4.0" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\..\Services\User\User.Api\User.Api.csproj" />
+    <ProjectReference Include="..\UpWatch.IoC\UpWatch.IoC.csproj" />
+  </ItemGroup>
+
 </Project>
