@@ -11,8 +11,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\..\Services\Auth\Auth.Api\Auth.Api.csproj" />
-    <ProjectReference Include="..\..\Services\User\User.Api\User.Api.csproj" />
+    <ProjectReference Include="..\..\Services\Identity\Identity.Api\Identity.Api.csproj" />
     <ProjectReference Include="..\UpWatch.IoC\UpWatch.IoC.csproj" />
   </ItemGroup>
 
