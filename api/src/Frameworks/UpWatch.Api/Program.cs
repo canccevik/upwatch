@@ -1,4 +1,6 @@
+using AutoWrapper;
 using UpWatch.Api;
+using UpWatch.Data.AutoWrapper;
 using UpWatch.IoC;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -16,6 +18,11 @@ if (app.Environment.IsDevelopment())
     app.UseSwagger();
     app.UseSwaggerUI();
 }
+
+app.UseApiResponseAndExceptionWrapper<WrapperMap>(new AutoWrapperOptions
+{
+    UseCustomSchema = true
+});
 
 app.UseHttpsRedirection();
 app.UseAuthorization();

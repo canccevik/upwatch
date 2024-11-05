@@ -37,6 +37,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Identity.Domain", "src\Serv
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Identity.Infrastructure", "src\Services\Identity\Identity.Infrastructure\Identity.Infrastructure.csproj", "{A90B4ED4-BE42-4D4E-A865-D6D8F8443055}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UpWatch.Data", "src\Frameworks\UpWatch.Data\UpWatch.Data.csproj", "{657D1D89-06BA-40DD-A982-7B8352962425}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -98,6 +100,10 @@ Global
 		{A90B4ED4-BE42-4D4E-A865-D6D8F8443055}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A90B4ED4-BE42-4D4E-A865-D6D8F8443055}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A90B4ED4-BE42-4D4E-A865-D6D8F8443055}.Release|Any CPU.Build.0 = Release|Any CPU
+		{657D1D89-06BA-40DD-A982-7B8352962425}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{657D1D89-06BA-40DD-A982-7B8352962425}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{657D1D89-06BA-40DD-A982-7B8352962425}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{657D1D89-06BA-40DD-A982-7B8352962425}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{12E0AB91-978B-4B2C-8355-1CF0DF92EEDA} = {41583E31-D077-44E7-AE26-212AC0CA5EDA}
@@ -116,5 +122,6 @@ Global
 		{16660A98-1F12-4694-B01E-9A0741A385B6} = {915B77D8-AD1C-4D8F-925D-42AB0DC1811F}
 		{4155FA89-166A-4589-AD4D-51CCE8DFAEF8} = {915B77D8-AD1C-4D8F-925D-42AB0DC1811F}
 		{A90B4ED4-BE42-4D4E-A865-D6D8F8443055} = {915B77D8-AD1C-4D8F-925D-42AB0DC1811F}
+		{657D1D89-06BA-40DD-A982-7B8352962425} = {12E0AB91-978B-4B2C-8355-1CF0DF92EEDA}
 	EndGlobalSection
 EndGlobal
