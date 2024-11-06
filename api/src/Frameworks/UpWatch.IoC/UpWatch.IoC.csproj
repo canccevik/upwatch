@@ -12,6 +12,8 @@
 
   <ItemGroup>
     <ProjectReference Include="..\UpWatch.Configuration\UpWatch.Configuration.csproj" />
+    <ProjectReference Include="..\UpWatch.EntityFramework\UpWatch.EntityFramework.csproj" />
+    <ProjectReference Include="..\UpWatch.Repositories\UpWatch.Repositories.csproj" />
   </ItemGroup>
 
 </Project>

@@ -11,3 +11,4 @@ public class ApiModule : Module
         services.RegisterModule<IdentityModule>();
     }
 }
+ 

@@ -2,6 +2,7 @@ using Identity.Api.Controllers.Base;
 using Identity.Application.Auth.Register.Commands;
 using MediatR;
 using Microsoft.AspNetCore.Mvc;
+using UpWatch.Data.AutoWrapper;
 
 namespace Identity.Api.Controllers;
 
@@ -16,9 +17,6 @@ public class AuthController : IdentityBaseController
     }
 
     [HttpPost("register")]
-    public async Task<IActionResult> Register([FromBody] RegisterCommand command)
-    {
-        await _mediator.Send(command);
-        return Ok();
-    }
+    public async Task<ApiResponse> Register([FromBody] RegisterCommand command)
+        => new ApiResponse(await _mediator.Send(command));
 }

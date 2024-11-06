@@ -7,6 +7,7 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\..\..\Frameworks\UpWatch.Data\UpWatch.Data.csproj" />
     <ProjectReference Include="..\..\..\Frameworks\UpWatch.IoC\UpWatch.IoC.csproj" />
     <ProjectReference Include="..\..\..\Frameworks\UpWatch.MediatR\UpWatch.MediatR.csproj" />
     <ProjectReference Include="..\..\..\Frameworks\UpWatch.Mvc\UpWatch.Mvc.csproj" />

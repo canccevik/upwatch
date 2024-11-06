@@ -7,13 +7,14 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\..\..\Frameworks\UpWatch.Data\UpWatch.Data.csproj" />
     <ProjectReference Include="..\..\..\Frameworks\UpWatch.Domain\UpWatch.Domain.csproj" />
+    <ProjectReference Include="..\..\..\Frameworks\UpWatch.IoC\UpWatch.IoC.csproj" />
     <ProjectReference Include="..\..\..\Frameworks\UpWatch.MediatR\UpWatch.MediatR.csproj" />
     <ProjectReference Include="..\Identity.Domain\Identity.Domain.csproj" />
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Auth\Register\" />
     <Folder Include="Shared\" />
   </ItemGroup>
 

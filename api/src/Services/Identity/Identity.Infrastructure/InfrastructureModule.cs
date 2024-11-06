@@ -6,6 +6,7 @@ using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
+using UpWatch.IoC;
 using UpWatch.IoC.Module;
 
 namespace Identity.Infrastructure;
@@ -14,6 +15,8 @@ public class InfrastructureModule : Module
 {
     protected override void Bootstrap(IServiceCollection services, IConfiguration configuration)
     {
+        services.AddUnitOfWork<AppDbContext>();
+        
         services.AddDbContext<AppDbContext>(options =>
             options.UseNpgsql(configuration.GetConnectionString("DefaultConnection")));
         

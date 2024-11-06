@@ -1,5 +1,6 @@
 using FluentValidation;
 using MediatR;
+using UpWatch.Data.AutoWrapper;
 
 namespace UpWatch.MediatR;
 
@@ -21,10 +22,11 @@ public class ValidationBehavior<TRequest, TResponse> : IPipelineBehavior<TReques
             .Select(v => v.Validate(context))
             .SelectMany(result => result.Errors)
             .Where(f => f != null)
+            .Select(f => f.ErrorMessage)
             .ToList();
 
         if (failures.Count != 0)
-            throw new ValidationException(failures);
+            throw new ApiException(failures);
 
         return await next();
     }

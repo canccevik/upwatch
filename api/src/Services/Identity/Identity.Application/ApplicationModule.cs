@@ -1,17 +1,16 @@
-using Identity.Application;
-using Identity.Infrastructure;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using UpWatch.IoC;
 using UpWatch.IoC.Module;
+using UpWatch.MediatR;
 
-namespace Identity.Api;
+namespace Identity.Application;
 
-public class IdentityModule : Module
+public class ApplicationModule : Module
 {
     protected override void Bootstrap(IServiceCollection services, IConfiguration configuration)
     {
-        services.RegisterModule<ApplicationModule>();
-        services.RegisterModule<InfrastructureModule>();
+        services.AddAutoMapper(GetType().Assembly);
+        services.AddMediatRWithFluentValidation(GetType());
     }
 }
