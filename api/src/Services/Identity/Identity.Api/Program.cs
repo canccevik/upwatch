@@ -1,5 +1,5 @@
 using AutoWrapper;
-using UpWatch.Api;
+using Identity.Api;
 using UpWatch.Data.AutoWrapper;
 using UpWatch.IoC;
 
