@@ -1,7 +1,8 @@
 using System.Linq.Expressions;
+using System.Net;
 using Microsoft.EntityFrameworkCore;
+using UpWatch.Data.AutoWrapper;
 using UpWatch.Domain;
-using UpWatch.Exceptions.Exceptions;
 using UpWatch.Repositories.Repository;
 
 namespace UpWatch.EntityFramework.Repositories;
@@ -29,7 +30,7 @@ public class EfRepository<TContext, TEntity> : EfQueryRepository<TContext, TEnti
     {
         var entity = _dbSet.Find(key);
         if (entity == null)
-            throw new ItemNotFoundException(key);
+            throw new ApiException($"Item not found: {item}", HttpStatusCode.NotFound);
             
         _dbContext.Entry(entity).CurrentValues.SetValues(item);
         return entity;
@@ -39,7 +40,7 @@ public class EfRepository<TContext, TEntity> : EfQueryRepository<TContext, TEnti
     {
         var entity = await _dbSet.FindAsync(key);
         if (entity == null)
-            throw new ItemNotFoundException(key);
+            throw new ApiException($"Item not found: {item}", HttpStatusCode.NotFound);
             
         _dbContext.Entry(entity).CurrentValues.SetValues(item);
         return entity;
@@ -52,7 +53,7 @@ public class EfRepository<TContext, TEntity> : EfQueryRepository<TContext, TEnti
         switch (entity)
         {
             case null:
-                throw new ItemNotFoundException(key);
+                throw new ApiException($"Item not found: {key}", HttpStatusCode.NotFound);
             case ISoftDeletable softDeletableEntity:
                 softDeletableEntity.IsDeleted = true;
                 break;
@@ -82,7 +83,7 @@ public class EfRepository<TContext, TEntity> : EfQueryRepository<TContext, TEnti
         switch (entity)
         {
             case null:
-                throw new ItemNotFoundException(key);
+                throw new ApiException($"Item not found: {key}", HttpStatusCode.NotFound);
             case ISoftDeletable softDeletableEntity:
                 softDeletableEntity.IsDeleted = true;
                 break;

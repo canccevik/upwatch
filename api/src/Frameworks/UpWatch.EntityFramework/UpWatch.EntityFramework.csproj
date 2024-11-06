@@ -11,6 +11,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\UpWatch.Data\UpWatch.Data.csproj" />
     <ProjectReference Include="..\UpWatch.Domain\UpWatch.Domain.csproj" />
     <ProjectReference Include="..\UpWatch.Repositories\UpWatch.Repositories.csproj" />
   </ItemGroup>
