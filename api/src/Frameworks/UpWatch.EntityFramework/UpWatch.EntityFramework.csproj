@@ -12,7 +12,6 @@
 
   <ItemGroup>
     <ProjectReference Include="..\UpWatch.Domain\UpWatch.Domain.csproj" />
-    <ProjectReference Include="..\UpWatch.Exceptions\UpWatch.Exceptions.csproj" />
     <ProjectReference Include="..\UpWatch.Repositories\UpWatch.Repositories.csproj" />
   </ItemGroup>
 
