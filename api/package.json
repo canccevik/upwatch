@@ -8,6 +8,7 @@
   },
   "dependencies": {},
   "devDependencies": {
+    "@upwatch/prettier-config": "workspace:^",
     "lerna": "^8.1.9"
   }
 }
