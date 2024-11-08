@@ -5,13 +5,25 @@
   "Routes": [
     {
       "UpstreamPathTemplate": "/api/auth/{everything}",
-      "UpstreamHttpMethod": [ "GET", "POST", "PUT", "PATCH", "DELETE" ],
+      "UpstreamHttpMethod": ["GET", "POST", "PUT", "PATCH", "DELETE"],
       "DownstreamPathTemplate": "/api/auth/{everything}",
       "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
           "Host": "localhost",
           "Port": 8001
+        }
+      ]
+    },
+    {
+      "UpstreamPathTemplate": "/api/notifications/{everything}",
+      "UpstreamHttpMethod": ["GET", "POST", "PUT", "PATCH", "DELETE"],
+      "DownstreamPathTemplate": "/api/notifications/{everything}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 8002
         }
       ]
     }
