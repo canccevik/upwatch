@@ -1,5 +1,6 @@
 using Identity.Application;
 using Identity.Infrastructure;
+using MassTransit;
 using UpWatch.IoC;
 using UpWatch.IoC.Module;
 
@@ -11,5 +12,17 @@ public class ApiModule : Module
     {
         services.RegisterModule<ApplicationModule>();
         services.RegisterModule<InfrastructureModule>();
+        
+        AddMassTransit(services);
+    }
+
+    private void AddMassTransit(IServiceCollection services)
+    {
+        services.AddMassTransit(x =>
+        {
+            x.UsingRabbitMq();
+        });
+
+        services.AddMassTransitHostedService();
     }
 }
