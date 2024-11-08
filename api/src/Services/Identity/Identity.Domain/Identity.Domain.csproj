@@ -12,7 +12,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\..\..\Frameworks\UpWatch.Repositories\UpWatch.Repositories.csproj" />
+    <ProjectReference Include="..\..\..\Frameworks\DotNet\UpWatch.EntityFramework\UpWatch.EntityFramework.csproj" />
   </ItemGroup>
 
 </Project>

@@ -12,8 +12,10 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\..\..\Frameworks\UpWatch.IoC\UpWatch.IoC.csproj" />
-    <ProjectReference Include="..\..\..\Frameworks\UpWatch.Mvc\UpWatch.Mvc.csproj" />
+    <ProjectReference Include="..\..\..\Frameworks\DotNet\UpWatch.Data\UpWatch.Data.csproj" />
+    <ProjectReference Include="..\..\..\Frameworks\DotNet\UpWatch.IoC\UpWatch.IoC.csproj" />
+    <ProjectReference Include="..\..\..\Frameworks\DotNet\UpWatch.MediatR\UpWatch.MediatR.csproj" />
+    <ProjectReference Include="..\..\..\Frameworks\DotNet\UpWatch.Mvc\UpWatch.Mvc.csproj" />
     <ProjectReference Include="..\Identity.Application\Identity.Application.csproj" />
     <ProjectReference Include="..\Identity.Domain\Identity.Domain.csproj" />
     <ProjectReference Include="..\Identity.Infrastructure\Identity.Infrastructure.csproj" />
